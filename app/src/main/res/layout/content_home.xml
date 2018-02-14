@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="it.hueic.kenhoang.mp3_app.Activity.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <ss.com.bannerslider.views.BannerSlider
+        android:id="@+id/bannerSlide"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:interval="5000"
+        app:loopSlides="true"
+        app:defaultIndicators="circle"
+        app:defaultBanner="1"
+        app:animateIndicators="true"
+        app:indicatorSize="12dp"
+        />
+</RelativeLayout>
