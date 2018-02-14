@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <ImageView
+           android:id="@+id/imgStatus"
+           android:src="@drawable/ic_graphic_eq_black_24dp"
+           android:padding="20dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <LinearLayout
+           android:layout_toLeftOf="@+id/imgDownload"
+           android:layout_toRightOf="@+id/imgStatus"
+           android:layout_centerVertical="true"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/name"
+               android:textSize="18sp"
+               android:textColor="@android:color/white"
+               android:text="Overground"
+               android:maxLines="1"
+               android:ellipsize="end"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               />
+           <TextView
+               android:id="@+id/desc"
+               android:textSize="16sp"
+               android:textColor="@color/colorProgress"
+               android:ellipsize="start"
+               android:text="James Blade"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:singleLine="true" />
+       </LinearLayout>
+
+       <ImageView
+           android:id="@+id/imgDownload"
+           android:src="@drawable/ic_cloud_download_black_24dp"
+           android:padding="20dp"
+           android:layout_alignParentRight="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+   </RelativeLayout>
+    <include layout="@layout/view_divider"/>
+</LinearLayout>
